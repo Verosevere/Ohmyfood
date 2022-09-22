@@ -124,7 +124,6 @@ span{
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,6 +141,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .fonctionnement ol button:hover{
     background-color: #e8ddf5;
