@@ -506,6 +506,11 @@ a{
     color: white;
     border: none;
     cursor: pointer;
+    transition-duration: 20s;
+}
+#commander:hover{
+	filter:  brightness(1.2);
+	box-shadow: 6px 6px 6px rgb(157, 26, 26);
 }
 .flexcommander{
     display: flex;
