@@ -119,7 +119,7 @@ ol{
     list-style-type: none;
     counter-reset: nombre;
 }
-span{
+.rond{
     background-color: #9356DC;
     width: 22px;
     height: 22px;
@@ -131,7 +131,9 @@ span{
     margin-right: 300px;
     color: white;
 }
-
+.alignement{
+    padding-left: 30px;
+}
 .fonctionnement ol button{
     width: 305px;
     height: 55px;
@@ -506,11 +508,11 @@ a{
     color: white;
     border: none;
     cursor: pointer;
-    transition-duration: 20s;
+    transition-duration: 300ms;
 }
 #commander:hover{
 	filter:  brightness(1.2);
-	box-shadow: 6px 6px 6px rgb(157, 26, 26);
+	box-shadow: 6px 6px 6px rgb(240, 238, 238);
 }
 .flexcommander{
     display: flex;
