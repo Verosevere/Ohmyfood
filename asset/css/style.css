@@ -79,9 +79,6 @@ a{
     border-top: 4px rgb(192, 190, 190) solid;
     background-color: rgb(224, 221, 221);
     padding-right: 20px;
-   
-
-    
 }
 .box i{
     padding-right: 15px;
@@ -151,11 +148,9 @@ ol{
 }
 
 .fonctionnement li i{
-    /*padding-right: 30px;*/
     padding-left: 15px; 
     position: absolute;
     padding-right: 255px;
-    
 }
 
 
@@ -229,10 +224,6 @@ ol{
 }
 
 /*POSITION COEUR*/
-
-
-/*SANS ANNIMATION
-ON VA CHERCHER LE LOGO*/
 #restaurant i{
 	position: absolute; /*Il est ensuite positionné par rapport à son ancêtre le plus proche */
 	color: grey;
@@ -444,26 +435,7 @@ width: 150px;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-article h4 .depassement{
-    display: inline-block;
-    color: black;
-    font-size: 20px;
-    padding-left: 5px;
-    margin-top: 5px;
-}
-article:hover h4 .depassement{
-    display: none;
-}
-article h4 .depassement:nth-child(2){
-    display: none;
-    color: black;
-    font-size: 20px;
-    padding-left: 5px;
-    
-}
-article:hover h4 .depassement:nth-child(2){
-    display: inline-block;
-}
+
 .menu_a_la_francaise p{
     padding-left: 15px;
     font-weight: 200;
@@ -471,34 +443,10 @@ article:hover h4 .depassement:nth-child(2){
     margin-top: 2px;
     font-size: 12px;
 }
-
-article p .depassement{
-    display: inline-block;
-    padding-left: 3px;
-    font-weight: 200;
-    color: black;
-    margin-top: 2px;
-    font-size: 15px;
-
-}
-article:hover p .depassement{
-    
-    display: none;
-}
-article p .depassement:nth-child(2){
-    display: none;
-    font-weight: 200;
-    color: black;
-    margin-top: 2px;
-    font-size: 15px;
-}
-article:hover p .depassement:nth-child(2){
-    display: inline-block;
-}
 a{
     text-decoration: none;
     cursor: pointer;
-}          
+}         
             /*code bouton */
 #commander{
     background-image: linear-gradient( #FF79DA,#9356DC);
