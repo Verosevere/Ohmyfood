@@ -107,7 +107,11 @@ a{
 }
                /*Fonctionnement*/
 
-
+.fonctionnement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .fonctionnement h2{
     margin-left: 20px;
 }
@@ -115,7 +119,12 @@ a{
 ol{
     list-style-type: none;
     counter-reset: nombre;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25%;
 }
+
 .rond{
     background-color: #9356DC;
     width: 22px;
@@ -162,6 +171,9 @@ ol{
     margin-top: 55px;
     padding-top: 27px;
 }
+#restaurant ul{
+    margin: 0;
+}
 #restaurant a{
 
 	text-decoration: none;
@@ -177,7 +189,7 @@ ol{
 	padding-top: 3px;
     padding-left: 8px;
 	font-weight: bold;
-	color: grey;
+	color:#008766;
 	
 
 }
@@ -515,6 +527,17 @@ ol{
     padding-right: 430px;
     padding-top: 20px;
 }
+ol{
+    flex-direction: row;
+}
+.fonctionnement ol button{
+    max-width: 450px;
+    height: 100px;
+}
+#restaurant article{
+    max-width:550px;
+    margin: 10px;
+}
 .titre_coeur i{
     font-size: 32px;
 }
@@ -550,6 +573,26 @@ ol{
 .menu_a_la_francaise article:after{
     bottom: 50px;
 }
+#restaurant{
+    padding: 45px 5%;
+}
+#restaurant ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+              /*page menu dans sa globalité*/
+.wrapper_menu{
+    height: fit-content;
+
+}
+.entete_image{
+    object-fit: cover;
+}
+
+
 }     
 
 
