@@ -111,6 +111,8 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-right: 211px;
+
 }
 .fonctionnement h2{
     margin-left: 20px;
@@ -168,11 +170,13 @@ ol{
 #restaurant{
 	background-color: #F2F2F2;
     padding-bottom: 1px;
-    margin-top: 55px;
+    margin-top: 20px;
     padding-top: 27px;
 }
 #restaurant ul{
     margin: 0;
+    /*margin-right: 10px;
+    padding-left: 18px;*/
 }
 #restaurant a{
 
@@ -190,10 +194,7 @@ ol{
     padding-left: 8px;
 	font-weight: bold;
 	color:#008766;
-	
-
 }
-
 #restaurant h2{
 	display: inline-flex;
 	padding-left: 20px;
@@ -243,6 +244,7 @@ ol{
 	right: 35px;
 	bottom: 8px;
 }
+
 	
 	
 
@@ -336,7 +338,7 @@ width: 150px;
 }
          /* PROPRIETE APRES*/
 .titre_coeur i:after{
-	content: url(/Ohmyfood/asset/images/heart-solid-violet\(2\).svg);
+	content: url(../images/heart-solid-violet\(2\).svg);
 	position: relative;
 	top: -25px;
 	right: 1.2px;
@@ -500,8 +502,9 @@ ol{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 225px;
 }
+
 .fonctionnement ol button{
     margin-right: 35px;
     margin-bottom: 30px;
