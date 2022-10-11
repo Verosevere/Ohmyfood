@@ -432,6 +432,7 @@ width: 150px;
 .menu_a_la_francaise  article:hover:after{
     transform: translateX(-190%) rotate(1turn);
 }
+
 .menu_a_la_francaise h2{
     margin-left: 10px;
     border-bottom: 3px #99E2D0 solid;
@@ -448,6 +449,10 @@ width: 150px;
     padding-left: 15px;
     margin-top: 10px;
     margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 .menu_a_la_francaise p{
@@ -456,6 +461,9 @@ width: 150px;
     color: black;
     margin-top: 2px;
     font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 a{
     text-decoration: none;
@@ -536,6 +544,10 @@ ol{
 .fonctionnement ol button{
     max-width: 450px;
     height: 100px;
+}
+.rond{
+    width: 30px;
+    height: 30px;
 }
 #restaurant article{
     max-width:550px;
