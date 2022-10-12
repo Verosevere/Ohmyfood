@@ -22,6 +22,7 @@ a{
     color: black;
    
 }
+                                      /*Loader*/
 .container_loader{
     position: fixed;
     background-image:linear-gradient(#FF79DA,#99E2D0,#9356DC);
@@ -51,9 +52,7 @@ a{
 .container_loader img{
     width: 250px;
     height: 35px;
-    /*background-color:linear-gradient(#FF79DA,#99E2D0,#9356DC);*/
     animation: rotation 5s infinite linear;
-    
 }
 @keyframes rotation {
     to{
@@ -105,7 +104,7 @@ a{
     color: white;
     border: none;
 }
-               /*Fonctionnement*/
+                                  /*Fonctionnement 1 2 3*/
 
 .fonctionnement{
     display: flex;
@@ -173,10 +172,8 @@ ol{
     margin-top: 20px;
     padding-top: 27px;
 }
-#restaurant ul{
+#restaurant .flex-bureau{
     margin: 0;
-    /*margin-right: 10px;
-    padding-left: 18px;*/
 }
 #restaurant a{
 
@@ -203,13 +200,14 @@ ol{
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: auto;
+	/*margin: auto;*/
 	margin-bottom: 20px;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px grey;
 	background-color: white;
-	width: 90%;
+	width: 88%;
 	height: 280px;
+    margin-left: 15px;
 }
 #restaurant a{
 	width:100%;
@@ -235,7 +233,6 @@ ol{
 	margin: 0px;
 
 }
-
 /*POSITION COEUR*/
 #restaurant i{
 	position: absolute; /*Il est ensuite positionné par rapport à son ancêtre le plus proche */
@@ -244,10 +241,6 @@ ol{
 	right: 35px;
 	bottom: 8px;
 }
-
-	
-	
-
 /* PROPRIETE APRES*/
 #restaurant  i:after{
 	content: url(../images/heart-solid-violet\(2\).svg);
@@ -256,18 +249,13 @@ ol{
 	right: 1.2px;
 	opacity: 0;
 	transition: 1s;
-   
-	
-	
 }
-
 /*AU PASSAGE DE SOURIS DONNE PROPRIETE*/
 #restaurant i:hover:after{
-
-	opacity: 1;
+    opacity: 1;
 	
 }
-                 /*Footer*/
+                                        /*Footer*/
 .footer{
     background-color: rgb(68, 67, 67);
     color: white;
@@ -295,7 +283,7 @@ footer p{
     margin-top: 5px;
 }
 
-                    /* page1 */
+                                    /* PAGES */
 .logo1{
 width: 150px;
 }
@@ -311,6 +299,7 @@ width: 150px;
 }
 .entete_image{
     width: 100%;
+    object-fit: cover;
 }
 .menu_a_la_francaise{
     padding-top: 5px;
@@ -336,7 +325,7 @@ width: 150px;
     padding: 22px 15px 0px 0px;
     color: grey;
 }
-         /* PROPRIETE APRES*/
+                            /* PROPRIETE APRES*/
 .titre_coeur i:after{
 	content: url(../images/heart-solid-violet\(2\).svg);
 	position: relative;
@@ -361,8 +350,8 @@ width: 150px;
     height: 70px;
 }
 
-/*************ANIMATION****MENU************/
-           /*ANIMATION DE CHAQUE CLASSE*/
+                               /*ANIMATION MENU*/
+                         /*ANIMATION DE CHAQUE CLASSE*/
 .entree{
     animation: move 1s linear ,slide 1s linear;/*affichge de la div de façon linéaire*/
 }
@@ -382,57 +371,6 @@ width: 150px;
     from{transform: translateY(-30px);}
     to{transform: translateY(0px);}
 }
-
-        /***************PRIX**HOVER*************/
-        
-       /*le prix se deplace vers la gauche*/
-.menu_a_la_francaise article .prix {
-    position: absolute;
-    padding-left: 88%;
-    top: 38px;
-    color: #000;
-    font-weight: bold;
-    transition: .3s;
-}
-.menu_a_la_francaise article:hover .prix{
-    transform: translateX(-20%);
-}
-/***************ANIMATION*****PLATS******************************/
-
-
-            /*PROPRIETE ARTICLE AVANT*/
-.menu_a_la_francaise article:before{
-    content: ""; /*content à vide*/
-    position: absolute;
-    background: #99E2D0;
-    border-radius: 0 20px 20px 0;
-    width: 20%;
-    height: 100%;
-    top:0;
-    right: -20%;
-    transition: .3s ;
-}
-
-         /*PROPRIETE ARTICLE APRES*/
-.menu_a_la_francaise article:after{
-    content:url(../images/circle-check-solid-white.svg) ;
-
-    position: absolute;
-    right: -15%;
-    top: 20px;
-    width: 10%;
-    transition: .3s ;
-}
-         /*ACTION AU DEBUT HOVER*/
-.menu_a_la_francaise article:hover:before{
-    transform: translateX(-100%);
-}
-
-        /*ACTION APRES HOVER*/
-.menu_a_la_francaise  article:hover:after{
-    transform: translateX(-190%) rotate(1turn);
-}
-
 .menu_a_la_francaise h2{
     margin-left: 10px;
     border-bottom: 3px #99E2D0 solid;
@@ -443,28 +381,87 @@ width: 150px;
     font-size: medium;
     margin-top: 50px;
 }
-.menu_a_la_francaise h4{
-    color: black;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    white-space: nowrap;
+
+          /*Check bouton*/
+.menu{
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 6px 6px 6px grey;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    height: 100px;
+    display: flex;
+    transition: ease-in 1s;
+
     overflow: hidden;
-    text-overflow: ellipsis;
-    
+    padding-left: 10px;
 }
 
-.menu_a_la_francaise p{
-    padding-left: 15px;
-    font-weight: 200;
-    color: black;
-    margin-top: 2px;
-    font-size: 12px;
+.commande {
+    flex: 4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.accompagnement_prix {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
+
+.description {
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.prix {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+}
+
+.check {
+    flex: 0;
+    background-color: #99E2D0;
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 0.2s;
+}
+.check img {
+    width: 40px;
+    position: relative;
+    transition: 0.5s ease;
+    transform: rotate(90deg);
+}
+.menu:hover .check {
+    flex: 1;
+}
+
+.menu:hover .check img {
+    transform: rotate(0deg);
+}
+          
 a{
     text-decoration: none;
     cursor: pointer;
@@ -520,9 +517,7 @@ ol{
 .restaurant h2{
     margin-left: 15px;
 }
-.menu_a_la_francaise{
-    height: 1600px;
-}
+
 .menu_a_la_francaise article{
     height: 100px;
     width: 60%;
@@ -562,7 +557,7 @@ ol{
 
 .menu_a_la_francaise {
     background-color: #F2F2F2;
-    height: 1890px;
+    
 }
 .menu_a_la_francaise h1{
     font-size: 50px;
@@ -591,23 +586,13 @@ ol{
 #restaurant{
     padding: 45px 5%;
 }
-#restaurant ul{
+#restaurant .flex-bureau{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
-              /*page menu dans sa globalité*/
-.wrapper_menu{
-    height: fit-content;
-
-}
-.entete_image{
-    object-fit: cover;
-}
-
-
 }     
 
 
